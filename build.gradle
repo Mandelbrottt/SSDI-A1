@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'csci2020u.assignment1.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}

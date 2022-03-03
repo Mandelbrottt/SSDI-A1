@@ -1,0 +1,22 @@
+# Folders
+**/[Bb]uild/
+!src/**/build/
+bin/
+
+# Dot Folders
+.gradle/
+.idea/
+.vscode/
+.project/
+.classpath/
+.gradletasknamecache/
+
+# Files
+*.class
+*.jar
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
