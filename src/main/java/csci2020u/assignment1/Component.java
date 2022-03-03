@@ -4,23 +4,23 @@ abstract class Component {
     /**
      * Called when the object is first constructed by the engine
      */
-    public void OnCreate()  {}
+    public void onCreate()  {}
 
     /**
      * Called once every frame
      */
-    public void OnUpdate()  {}
+    public void onUpdate()  {}
 
     /**
      * Called when the component is no longer being used by the engine
      */
-    public void OnDestroy() {}
+    public void onDestroy() {}
 
-    protected Registry GetRegistry() {
+    protected Registry getRegistry() {
         return registry;
     }
     
-    public void SetRegistry(Registry registry) {
+    public void setRegistry(Registry registry) {
         this.registry = registry;
     }
 

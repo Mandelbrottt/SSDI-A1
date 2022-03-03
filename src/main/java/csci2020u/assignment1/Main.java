@@ -4,15 +4,15 @@ public class Main {
     public static void main(String[] args) {
         Registry registry = new Registry();
 
-        registry.AddComponent(TestComponent1.class);
-        registry.AddComponent("TestComponent2");
+        registry.addComponent(TestComponent1.class);
+        registry.addComponent("TestComponent2");
 
         System.out.println();
 
         // Simulate 3 game loops
         for (int i = 0; i < 3; i++) {
-            for (Component component : registry.GetAllComponents()){
-                component.OnUpdate();
+            for (Component component : registry.getAllComponents()){
+                component.onUpdate();
             }
 
             System.out.println();

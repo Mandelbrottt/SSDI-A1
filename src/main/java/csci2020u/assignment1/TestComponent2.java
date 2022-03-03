@@ -2,19 +2,19 @@ package csci2020u.assignment1;
 
 public class TestComponent2 extends Component {
     @Override
-    public void OnCreate() {
+    public void onCreate() {
         System.out.println("TestComponent2 OnCreate()");
-        testComponent3 = (TestComponent3) GetRegistry().AddComponent("TestComponent3");
+        testComponent3 = (TestComponent3) getRegistry().addComponent("TestComponent3");
     }
 
     @Override
-    public void OnUpdate() {
+    public void onUpdate() {
         a += testComponent3.GetA();
         System.out.printf("TestComponent2 OnUpdate()\n\t- TestComponent2::a = %d\n", a);
     }
 
     @Override
-    public void OnDestroy() {
+    public void onDestroy() {
         System.out.printf("TestComponent2 OnDestroy()\n\t- TestComponent2::a = %d\n", a);
         testComponent3 = null;
     }
